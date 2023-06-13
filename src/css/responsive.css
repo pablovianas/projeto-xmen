@@ -3,7 +3,7 @@
     body::before {
         background-repeat: no-repeat;
         background-position: center;
-        opacity: 0.2;
+        opacity: 0.1;
     }
     
     .cabecalho .logo{
@@ -12,18 +12,20 @@
     }
     .selecao-de-personagens{
         flex-direction: column-reverse;
+        gap: 50px;
     }
 
     .selecao-de-personagens .personagens{
         margin-top: 20px;  
     }
+    .selecao-de-personagens .personagens .titulo{
+        font-size: 15px;
+    }
     .selecao-de-personagens .personagens .lista-de-personagens{
         gap: 9px; 
-      
     }
     .selecao-de-personagens .personagens .personagem img{
-        width: 70px;
-        height: 100px;
+        width: 60px;
     }
     .personagem-selecionado{
         max-height: 285px;
@@ -37,8 +39,9 @@
     }
     
     .personagem-selecionado #descricao-personagem{
-        width: 100%;
-        padding: 10px;
+        width: 98%;
+        padding: 15px;
+        font-size: 15px;
     }
 }
 
@@ -54,6 +57,6 @@
     }
 
     .selecao-de-personagens .personagens{
-        margin-top: 35px;  
+        margin-block: 35px;  
     }
 }
